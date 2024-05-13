@@ -1,0 +1,82 @@
+.mainSlideImages{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSlideImages h1{
+  font-size: 50px;
+  color: #7E152F;
+  margin-bottom: 50px;
+align-self: center;
+font-family: "DM Serif Display", serif;
+font-weight: 800;
+letter-spacing: 5px;
+}
+.slideImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Defina a largura máxima do carrossel conforme desejado */
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev-button,
+.next-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+@media (max-width: 1150px) {
+  .slideImageContainer {
+    flex-direction: column;
+  }
+
+  .secondCarousel-container {
+    margin-top: 100px;
+  }
+
+  .carousel-container {
+    max-width: 400px; /* Defina a largura máxima do carrossel conforme desejado */
+  }
+}
+@media (max-width: 800px) {
+  .carousel-container {
+    max-width: 300px; /* Defina a largura máxima do carrossel conforme desejado */
+  }
+}

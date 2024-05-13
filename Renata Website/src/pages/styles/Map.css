@@ -1,0 +1,80 @@
+.mapContainer {
+  display: flex;
+  height: 90vh;
+}
+
+.map {
+  width: 65%;
+}
+
+.mapContent {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7E152F;
+  width: 35%;
+}
+
+.mapContent h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.mapContent p {
+  max-width: 250px;
+  margin-bottom: 10px;
+font-size: 18px;
+}
+
+.mapContent button {
+  margin-top: 10px;
+  width: 200px;
+  padding: 8px;
+background-color: transparent;
+border: 2px solid hsl(345, 80%, 70%);
+border-radius: 3px;
+color: hsl(345, 80%, 70%);
+cursor: pointer;
+}
+
+.mapContent button:hover{
+background-color: hsl(345, 80%, 70%);
+color: white;
+}
+
+@media (max-width:650px) {
+  .mapContainer{
+    flex-direction: column;
+  }
+
+  .map{
+    width: 100%;
+    height: 500px;
+  }
+
+  .mapContent{
+    width: 100%;
+height: 400px;
+  }
+  .mapContent div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:400px){
+  .mapContent h1{
+    font-size: 40px;
+  }
+}
+
+@media(max-width:350px){
+  .mapContent h1{
+    font-size: 35px;
+  }
+}

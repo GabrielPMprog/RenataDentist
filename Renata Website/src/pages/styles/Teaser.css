@@ -1,0 +1,70 @@
+.teaserContainer{
+height: 100vh;
+background-image: url('../../assets/background.png');
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.teaserImage{
+
+width: 600px;
+
+}
+
+.teaserContent{
+    margin-left: 50px;
+}
+
+.teaserContent h1{
+font-size: 40px;
+color: #7E152F;
+
+
+}
+.teaserList {
+    list-style: none;
+}
+
+.teaserList li {
+display: flex;
+align-items: center;
+margin-top: 20px;
+font-size: 20px;
+}
+
+.checkIcon{
+    margin-right: 10px;
+color: #7E152F;
+font-size: 20px;
+
+}
+
+@media (max-width: 1000px){
+
+.teaserContainer{
+    height: 150vh;
+    flex-direction: column;
+}
+
+.teaserContent{
+
+margin-top: 20px;
+
+}
+
+
+.teaserImage{
+    width: 500px    ;
+}
+
+}
+
+@media (max-width: 450px){
+
+.teaserImage{
+    width: 100%    ;
+
+}
+
+}
