@@ -29,3 +29,18 @@
   font-family: "Exo 2";
   font-weight: 600;
 }
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.groupFocus {
+  padding-top: 100px;
+  width: 20%;
+  height: 100px;
+  background-color: #36312b;
+}
+  

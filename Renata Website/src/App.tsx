@@ -2,7 +2,6 @@
 
 import Introduction from "./pages/Introduction";
 
-
 import Map from "./pages/Map.js";
 import Span from "./pages/Span";
 
@@ -12,6 +11,7 @@ import whatsAvatar from "./assets/whatsAvatar.ico";
 import Header from "./pages/Header";
 import ParalaxPage from "./pages/ParalaxPage";
 import Footer from "./pages/Footer.js";
+import Instagram from "./pages/Instagram";
 
 function App() {
   return (
@@ -19,10 +19,10 @@ function App() {
       <Header />
       <Introduction />
       <Span />
-     <ParalaxPage />
-      
+      <ParalaxPage />
       <Map />
-       <Footer />
+      <Instagram />
+      <Footer />
       <FloatingWhatsApp
         phoneNumber="+5551981399146"
         accountName="Renata Biesdorf"
