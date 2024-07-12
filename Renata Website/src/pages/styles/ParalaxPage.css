@@ -1,0 +1,28 @@
+.paralaxContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets//invisalignImage.PNG");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paralaxContainer h1{
+    color: white;
+    font-family: "Exo 2";
+    font-weight: 900;
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.customTitle{
+    color: var(--main-color);
+}

@@ -3,7 +3,7 @@ import "./styles/Footer.css";
 function Footer() {
   return (
     <footer className="footerContainer">
-      <h2>Seg-Sex: </h2>
+    <p>Dra.Renata Biesdorf © 2024. Todos os direitos reservados.</p>
     </footer>
   );
 }

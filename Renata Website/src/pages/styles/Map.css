@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #7E152F;
+  background-color:var(--main-color);
   width: 35%;
 }
 
@@ -34,14 +34,14 @@ font-size: 18px;
   width: 200px;
   padding: 8px;
 background-color: transparent;
-border: 2px solid hsl(345, 80%, 70%);
+border: 2px solid #DCA368;
 border-radius: 3px;
-color: hsl(345, 80%, 70%);
+color: #DCA368;
 cursor: pointer;
 }
 
 .mapContent button:hover{
-background-color: hsl(345, 80%, 70%);
+background-color: #DCA368;
 color: white;
 }
 

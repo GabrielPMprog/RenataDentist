@@ -7,4 +7,9 @@
 body {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
+
+}
+ 
+:root{
+  --main-color: #E7C29A;
 }

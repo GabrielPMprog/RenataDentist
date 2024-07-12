@@ -1,28 +1,28 @@
 // PAGES
-import Home from "./pages/Home";
-import Teaser from "./pages/Teaser";
-import Advertising from "./pages/Advertising";
+
 import Introduction from "./pages/Introduction";
-import SlideImages from "./pages/SlideImages";
-import Space from "./pages/Space";
-import Map from "./pages/Map";
+
+
+import Map from "./pages/Map.js";
 import Span from "./pages/Span";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 import whatsAvatar from "./assets/whatsAvatar.ico";
+import Header from "./pages/Header";
+import ParalaxPage from "./pages/ParalaxPage";
+import Footer from "./pages/Footer.js";
 
 function App() {
   return (
     <>
-      <Home />
-      <Teaser />
-      <Advertising />
+      <Header />
       <Introduction />
       <Span />
-      <SlideImages />
-      <Space />
+     <ParalaxPage />
+      
       <Map />
+       <Footer />
       <FloatingWhatsApp
         phoneNumber="+5551981399146"
         accountName="Renata Biesdorf"
