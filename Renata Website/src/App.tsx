@@ -12,6 +12,7 @@ import Header from "./pages/Header";
 import ParalaxPage from "./pages/ParalaxPage";
 import Footer from "./pages/Footer.js";
 import Instagram from "./pages/Instagram";
+import Swiper from "./pages/SwiperPage.jsx"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Introduction />
       <Span />
       <ParalaxPage />
+      <Swiper />
       <Map />
       <Instagram />
       <Footer />

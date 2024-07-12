@@ -13,7 +13,7 @@ export default function Header() {
           <li className="serviceList">
             <p>Serviços</p> <IoIosArrowDown className="arrowIcon"/>
             <div className="groupFocus">
-              <ul>
+              <ul className="groupFocusList">
                 <li>Botox</li>
                 <li>Invisalign</li>
               </ul>

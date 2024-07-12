@@ -32,15 +32,49 @@
 
 .serviceList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative; /* Needed for absolute positioning of groupFocus */
+}
+
+.serviceList:hover .groupFocus {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .groupFocus {
-  padding-top: 100px;
-  width: 20%;
-  height: 100px;
-  background-color: #36312b;
-}
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -10;
+  background-color: #36312b; /* Match the header background color */
+  padding: 10px;
+  border-radius: 4px;
   
+}
+
+.groupFocusList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Display in a column */
+}
+
+.groupFocusList > li {
+  margin: 5px 0;
+  color: white; /* Match the header text color */
+  font-size: 16px; /* Adjust size as needed */
+  font-family: "Exo 2";
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ 
