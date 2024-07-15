@@ -51,3 +51,38 @@ margin-left: 15px;
   font-size: 1.2rem;
   margin-bottom: 10px; /* Espaçamento entre os itens da lista */
 }
+
+@media (max-width:1200px) {
+  
+.introductionContainer{
+  flex-direction: column;
+  height: 100%;
+}
+
+.introductionContent  {
+max-width: 70%;
+margin: 0;
+
+}
+
+.introductionContent h1{
+  text-align: center;
+ 
+}
+
+.introductionContent p{
+  text-align: center;
+  
+}
+
+.introductionContent p:last-child{
+  margin-bottom: 100px;
+}
+
+.dentistImage img{
+
+width: 90%;
+
+}
+
+}

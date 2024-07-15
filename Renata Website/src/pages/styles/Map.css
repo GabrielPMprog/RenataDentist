@@ -13,68 +13,95 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:var(--main-color);
+  background-color: var(--main-color);
   width: 35%;
 }
 
 .mapContent h1 {
-  font-size: 50px;
-  font-weight: bolder;
+  font-size: 60px;
+  font-family: "Exo 2";
+  font-weight: 900;
+
   margin-bottom: 10px;
 }
 
 .mapContent p {
-  max-width: 250px;
+  text-align: center;
   margin-bottom: 10px;
-font-size: 18px;
+  font-size: 18px;
 }
 
 .mapContent button {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
-  width: 200px;
+  width: 80%;
   padding: 8px;
-background-color: transparent;
-border: 2px solid #DCA368;
-border-radius: 3px;
-color: #DCA368;
-cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #dca368;
+  border-radius: 3px;
+  color: #dca368;
+  cursor: pointer;
 }
 
-.mapContent button:hover{
-background-color: #DCA368;
-color: white;
+.mapContent button:hover {
+  background-color: #dca368;
+  color: white;
 }
 
-@media (max-width:650px) {
-  .mapContainer{
+.mapContainer iframe {
+  width: 70%;
+  height: 100%
+
+}
+
+@media (max-width: 1550px) {
+  .mapContent h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mapContainer {
     flex-direction: column;
+    height: 100vh;
   }
 
-  .map{
+  .map {
     width: 100%;
     height: 500px;
   }
 
-  .mapContent{
+  .mapContent {
     width: 100%;
-height: 400px;
+    height: 400px;
   }
-  .mapContent div{
+  .mapContent div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
+  .mapContainer iframe {
+    width: 100%;
+    height: 70%
+  }
+
+  .mapContent button {
+    width: 50%;
+  }
 }
 
-@media(max-width:400px){
-  .mapContent h1{
+@media (max-width: 400px) {
+  .mapContent h1 {
     font-size: 40px;
   }
 }
 
-@media(max-width:350px){
-  .mapContent h1{
+@media (max-width: 350px) {
+  .mapContent h1 {
     font-size: 35px;
   }
 }

@@ -41,8 +41,6 @@
   .spanList {
     display: flex;
     flex-direction: column;
-  }
-  .spanList li h1 {
-    font-size: 50px;
+    gap: 30px;
   }
 }

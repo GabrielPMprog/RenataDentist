@@ -11,7 +11,7 @@ import whatsAvatar from "./assets/whatsAvatar.ico";
 import Header from "./pages/Header";
 import ParalaxPage from "./pages/ParalaxPage";
 import Footer from "./pages/Footer.js";
-import Instagram from "./pages/Instagram";
+import Instagram from "./pages/Instagram.jsx";
 import Swiper from "./pages/SwiperPage.jsx"
 
 function App() {

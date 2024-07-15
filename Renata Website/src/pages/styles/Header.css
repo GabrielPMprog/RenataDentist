@@ -7,19 +7,98 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  padding: 0 20px;
 }
 
-.links ul {
+.hamburgerIcon {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.fullScreenMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linksList {
   list-style: none;
-  margin-right: 100px;
-  align-items: center;
-  gap: 30px;
+  padding: 0;
 }
 
-.links li {
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serviceList p {
   display: flex;
   align-items: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+.serviceList:hover .groupFocus {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.groupFocus {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  width: 110%;
+  background-color: #36312b;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.groupFocusList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.groupFocusList li {
+  color: white;
+  font-size: 18px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  margin: 5px 0;
 }
 
 .links p,
@@ -30,43 +109,51 @@
   font-weight: 600;
 }
 
-.serviceList {
+/* HEADER > 800px */
+
+.serviceListToggle {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative; /* Needed for absolute positioning of groupFocus */
+  position: relative;
 }
 
-.serviceList:hover .groupFocus {
-  display: block;
+.serviceListToggle p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+.serviceListToggle:hover .groupFocus {
+  display: flex;
   animation: fadeIn 0.3s ease-in-out;
 }
 
-.groupFocus {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -10;
-  background-color: #36312b; /* Match the header background color */
-  padding: 10px;
-  border-radius: 4px;
-  
+.serviceListToggle:hover .arrowIcon {
+  animation: fadeIn 0.3s ease-in-out;
+rotate: 90deg;
 }
 
-.groupFocusList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.linksListToggle {
   display: flex;
-  flex-direction: column; /* Display in a column */
+  gap: 20px;
 }
 
-.groupFocusList > li {
-  margin: 5px 0;
-  color: white; /* Match the header text color */
-  font-size: 16px; /* Adjust size as needed */
+.linksListToggle {
+  list-style: none;
+}
+
+.linksListToggle p:last-child {
+  margin-right: 50px;
+}
+
+.linksListToggle p,
+.arrowIcon {
+  color: white;
+  font-size: 18px;
   font-family: "Exo 2";
+  font-weight: 600;
 }
 
 @keyframes fadeIn {
@@ -77,4 +164,13 @@
     opacity: 1;
   }
 }
- 
+
+@media (max-width: 1000px) {
+  .linksToggle {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: flex;
+  }
+}

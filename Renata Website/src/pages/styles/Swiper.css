@@ -1,4 +1,84 @@
 .swiperContainer{
-    height: 50vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.swiperContainer h1{
+    font-size: 90px;
+    font-family: "Exo 2";
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+.swiperContainer p{
+    font-size: 15px;
+    font-family: "Exo 2";
+margin-bottom: 50px;
+margin-top: 10px;
+ text-align: center;
+ max-width: 80%;
+}
+.swiper{
+    display: flex;
+    height: 50%;
+    width: 80%;
+}
+
+.swiperItemList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSlider{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    
+    .swiperContainer{
+        height: 150vh;
+        margin-bottom: 100px;
+    }
+
+    .swiper {
+        height: 100%;
+        width: 40%;
+    }
+}
+
+@media (max-width:900px){
+
+.swiper{
+    width: 50%;
+}
+
+}
+
+@media (max-width:700px){
+
+    .swiper{
+        width: 60%;
+    }
+    
+    }
+    
+    @media (max-width:550px){
+
+        .swiper{
+            width: 75%;
+        }
+        
+        }
+        
+        @media (max-width:450px){
+
+            .swiper{
+                width: 90%;
+            }
+            
+            }
+            

@@ -1,0 +1,12 @@
+.instagramContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%; /* Full viewport height */
+    margin-top: 100px;
+  }
+  
+  .instagramContent {
+    width: 1000px; /* Width of the iframe */
+    height: 1000px; /* Height of the iframe */
+  }
