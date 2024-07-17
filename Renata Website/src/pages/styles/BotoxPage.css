@@ -1,0 +1,89 @@
+.botoxPageContainer {
+    display: flex;
+    flex-direction: row; /* Alterado para exibir em linha */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%; /* Defina a largura máxima para prevenir que o conteúdo se estenda além da tela */
+    overflow: hidden; /* Adicionado para evitar que o conteúdo vaze para fora da tela em telas pequenas */
+  height: 100vh;
+  padding-top: 200px;
+  }
+
+
+  .dentistImage img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px; /* Reduzido o tamanho máximo da imagem para ajustar a um layout em linha */
+    height: auto;
+  
+  }
+  
+  .botoxPageContent {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+    text-align: left; /* Ajusta o texto para a esquerda */
+    margin-left: 50px; /* Adiciona um espaço entre a imagem e o texto */
+  max-width: 30%;
+  }
+  
+  
+  /* Aumenta o tamanho da fonte */
+  .botoxPageContent h1 {
+    color: #E7C29A;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
+    font-size: 90px; /* Tamanho da fonte para o título */
+    margin-bottom: 5px;
+  }
+  
+  .botoxPageContent p {
+    font-size: 1.5rem; /* Tamanho da fonte para o texto */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para tornar a lista mais responsiva */
+  .botoxPageContent ul {
+    padding: 0;
+    list-style: circle;
+  margin-left: 15px;
+  }
+  
+  .botoxPageContent ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+  }
+  
+  @media (max-width:1200px) {
+    
+  .botoxPageContainer{
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .botoxPageContent  {
+  max-width: 70%;
+  margin: 0;
+  
+  }
+  
+  .botoxPageContent h1{
+    text-align: center;
+   
+  }
+  
+  .botoxPageContent p{
+    text-align: center;
+    
+  }
+  
+  .botoxPageContent p:last-child{
+    margin-bottom: 100px;
+  }
+  
+  .dentistImage img{
+  
+  width: 90%;
+  
+  }
+  
+  }

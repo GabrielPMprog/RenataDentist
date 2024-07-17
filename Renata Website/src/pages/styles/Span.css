@@ -35,7 +35,7 @@
 
 @media (max-width: 900px) {
   .spanContainer {
-    height: 50vh;
+    height: 100vh;
   }
 
   .spanList {
@@ -44,3 +44,34 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 600px) {
+  .spanContainer {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .spanList li h1 {
+    font-size: 90px;
+  }
+}
+
+@media(max-width:400px){
+
+.spanList li h1{
+
+font-size: 75px;
+
+}
+
+}
+
+@media(max-width:300px){
+
+  .spanList li h1{
+  
+  font-size: 65px;
+  
+  }
+  
+  }

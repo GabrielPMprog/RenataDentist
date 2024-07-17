@@ -1,84 +1,115 @@
-.swiperContainer{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.swiperContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.swiperContainer h1{
-    font-size: 90px;
-    font-family: "Exo 2";
-    font-weight: 900;
-    color: var(--main-color);
+.swiperContainer h1 {
+  font-size: 90px;
+  font-family: "Exo 2";
+  font-weight: 900;
+  color: var(--main-color);
 }
 
-.swiperContainer p{
-    font-size: 15px;
-    font-family: "Exo 2";
-margin-bottom: 50px;
-margin-top: 10px;
- text-align: center;
- max-width: 80%;
+.swiperContainer p {
+  font-size: 15px;
+  font-family: "Exo 2";
+  margin-bottom: 50px;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 80%;
 }
-.swiper{
-    display: flex;
-    height: 50%;
-    width: 80%;
-}
-
-.swiperItemList{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.swiper {
+  display: flex;
+  height: 50%;
+  width: 80%;
 }
 
-.imageSlider{
-    width: 100%;
+.swiperItemList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageSlider {
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(
+    --main-color
+  ) !important; /* Use CSS variable for active color */
 }
 
 @media (max-width: 1200px) {
-    
-    .swiperContainer{
-        height: 150vh;
-        margin-bottom: 100px;
-    }
+  .swiperContainer {
+    height: 150vh;
+    margin-bottom: 100px;
+  }
 
-    .swiper {
-        height: 100%;
-        width: 40%;
-    }
-}
-
-@media (max-width:900px){
-
-.swiper{
+  .swiper {
+    height: 100%;
     width: 50%;
-}
+  }
+
+  .swiperItemList img{
+    width: 100%;
+    height: 100%;
+  }
 
 }
 
-@media (max-width:700px){
+@media (max-width: 900px) {
+  .swiper {
+    width: 50%;
+  }
+}
 
-    .swiper{
-        width: 60%;
+@media (max-width: 700px) {
+  .swiper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+    .swiperContainer{
+        height: 200vh;
+    }
+  .swiper {
+    width:75%;
+
+  }
+
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+    .swiperContainer h1 {
+        font-size: 70px;
+
+      }
+      
+}
+
+@media (max-width: 300px) {
+  .swiperContainer h1 {
+      font-size: 60px;
+
     }
     
+}
+
+@media (max-width: 250px) {
+  .swiperContainer h1 {
+      font-size: 50px;
+
     }
     
-    @media (max-width:550px){
-
-        .swiper{
-            width: 75%;
-        }
-        
-        }
-        
-        @media (max-width:450px){
-
-            .swiper{
-                width: 90%;
-            }
-            
-            }
-            
+}

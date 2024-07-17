@@ -1,7 +1,10 @@
 import "./styles/Swiper.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
 import "swiper/css";
+import "swiper/css/pagination"; 
 
 import { useState, useEffect } from "react";
 
@@ -36,12 +39,18 @@ useEffect(() => {
         quidem repellat adipisci!
       </p>
       <Swiper
+       modules={[Pagination, Autoplay]}
       className="swiper"
         spaceBetween={30}
         slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         loop={true}
+        autoplay={{ delay: 4000 }} 
         direction={direction}
+        pagination={{
+          clickable: true,
+        
+        }}
       >
         <SwiperSlide className="swiperItemList"><img className="imageSlider" src={botox} alt="botox" /></SwiperSlide>
         <SwiperSlide className="swiperItemList"><img className="imageSlider" src={clareamento} alt="clareamento" /></SwiperSlide>

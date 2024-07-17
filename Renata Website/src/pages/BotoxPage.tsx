@@ -1,23 +1,22 @@
-import "./styles/Introduction.css";
+import "./styles/BotoxPage.css";
 
 import DentistImage from "../assets/DentistImage.png";
 
-import { Element } from "react-scroll";
+import SliderBotox from "./components/SliderBotox.jsx";
 
-function Introduction() {
+function BotoxPage() {
   return (
-    <Element name="introduction">
-      <section className="introductionContainer">
+    <>
+      <section className="botoxPageContainer">
         <img
           src={DentistImage}
           className="dentistImage"
           alt="Dra. Renata Biesdorf"
         />
 
-        <div className="introductionContent">
-          <h1>Dra. Renata Biesdorf</h1>
+        <div className="botoxPageContent">
+          <h1>Botox</h1>
 
-          <p>Cref: XXXXX</p>
           <p>
             “Eu acredito em uma Odontologia de excelência, de forma
             descomplicada e confortável. O amor pela minha profissão e a busca
@@ -26,8 +25,9 @@ function Introduction() {
           </p>
         </div>
       </section>
-    </Element>
+      <SliderBotox />
+    </>
   );
 }
 
-export default Introduction;
+export default BotoxPage;

@@ -1,0 +1,56 @@
+.sliderBotoxContainer {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.botoxSwiperItemList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botoxItemTitle span {
+  font-size: 120px;
+  opacity: 0.2;
+  margin-right: -15px;
+}
+
+.botoxItemTitle {
+  font-size: 60px;
+  font-family: "Exo 2";
+  font-weight: 900;
+}
+
+.botoxSwiperItemList p {
+  max-width: 70%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(
+    --main-color
+  ) !important; /* Use CSS variable for active color */
+}
+
+.botoxPageSwiper {
+  width: 90%;
+}
+
+@media (max-width: 450px) {
+  .botoxItemTitle{
+    font-size: 250%;
+  }
+}
+
+@media (max-width: 450px) {
+  .botoxItemTitle span {
+    font-size: 100px;
+    opacity: 0.2;
+    margin-right: -15px;
+  }
+}

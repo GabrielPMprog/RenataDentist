@@ -37,8 +37,20 @@ max-width: 100%;
 
 @media (max-width:460px) {
   
+.paralaxContainer {
+  background-attachment:  local;
+
+}
+
+.customTitle{
+  background-color: rgba(157, 166, 175, 0.6);
+  color: var(--main-color);
+}
+
+
   .paralaxContainer h1{
     font-size: 60px;
+
   }
   
   }

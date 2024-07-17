@@ -10,3 +10,34 @@
     width: 1000px; /* Width of the iframe */
     height: 1000px; /* Height of the iframe */
   }
+
+  @media (max-width: 700px){
+
+.instagramContent{
+
+height: 750px;
+
+}
+
+  }
+
+  @media (max-width: 450px){
+
+    .instagramContent{
+
+      height: 600px;
+      
+      }
+    
+      }
+
+      
+  @media (max-width: 350px){
+
+    .instagramContent{
+
+      height: 500px;
+      
+      }
+    
+      }

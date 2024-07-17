@@ -3,6 +3,8 @@ import "./styles/Header.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logoRenata from "../assets/logoRenata.png";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,24 +15,38 @@ export default function Header() {
 
   return (
     <div className="headerContainer">
-      <img src={logoRenata} alt="Dra.Renata Biesdorf" />
+      <ScrollLink to="introduction" smooth={true} duration={500} offset={-100}>
+        <RouterLink to="/">
+          <img src={logoRenata} alt="Dra.Renata Biesdorf" className="logoRenata"/>
+        </RouterLink>
+      </ScrollLink>
 
       <div className="linksToggle">
-            <ul className="linksListToggle">
-              <li className="serviceListToggle">
-                <p>Serviços</p> <IoIosArrowForward className="arrowIcon" />
-                <div className="groupFocus">
-                  <ul className="groupFocusList">
-                    <li>Botox</li>
-                    <li>Invisalign</li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <p>Contato</p>
-              </li>
-            </ul>
-          </div>
+        <ul className="linksListToggle">
+          <li className="serviceListToggle">
+            <p>Serviços</p> <IoIosArrowForward className="arrowIcon" />
+            <div className="groupFocus groupFocusToggle">
+              <ul className="groupFocusList">
+                <li>
+                  <RouterLink to="/botox" className="headerLink">
+                    Botox
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/invisalign" className="headerLink">
+                    Invisalign
+                  </RouterLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="headerBtn">
+            <ScrollLink to="contact" smooth={true} duration={500} offset={-100}>
+              <p>Contato</p>
+            </ScrollLink>
+          </li>
+        </ul>
+      </div>
 
       <FaBars className="hamburgerIcon" onClick={toggleMenu} />
       {menuOpen && (
@@ -40,15 +56,30 @@ export default function Header() {
             <ul className="linksList">
               <li className="serviceList">
                 <p>Serviços</p> <IoIosArrowForward className="arrowIcon" />
-                <div className="groupFocus">
+                <div className="groupFocus groupFocusHamburger">
                   <ul className="groupFocusList">
-                    <li>Botox</li>
-                    <li>Invisalign</li>
+                    <li>
+                      <RouterLink to="/botox" className="headerLink headerLinkHamburger">
+                        Botox
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink to="/invisalign" className="headerLink headerLinkHamburger">
+                        Invisalign
+                      </RouterLink>
+                    </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <p>Contato</p>
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-100}
+                >
+                  <p>Contato</p>
+                </ScrollLink>
               </li>
             </ul>
           </div>
