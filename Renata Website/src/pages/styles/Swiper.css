@@ -43,7 +43,7 @@
   ) !important; /* Use CSS variable for active color */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .swiperContainer {
     height: 150vh;
     margin-bottom: 100px;
@@ -87,7 +87,10 @@
 @media (max-width: 450px) {
   .swiper {
     width: 90%;
+height: 90%;
   }
+  
+
 }
 
 @media (max-width: 400px) {
@@ -98,12 +101,17 @@
       
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .swiperContainer h1 {
       font-size: 60px;
 
     }
     
+    .swiper {
+
+  height: 80%;
+    }
+
 }
 
 @media (max-width: 250px) {

@@ -17,7 +17,11 @@ export default function Header() {
     <div className="headerContainer">
       <ScrollLink to="introduction" smooth={true} duration={500} offset={-100}>
         <RouterLink to="/">
-          <img src={logoRenata} alt="Dra.Renata Biesdorf" className="logoRenata"/>
+          <img
+            src={logoRenata}
+            alt="Dra.Renata Biesdorf"
+            className="logoRenata"
+          />
         </RouterLink>
       </ScrollLink>
 
@@ -42,7 +46,9 @@ export default function Header() {
           </li>
           <li className="headerBtn">
             <ScrollLink to="contact" smooth={true} duration={500} offset={-100}>
-              <p>Contato</p>
+              <RouterLink to="/">
+                <p>Contato</p>
+              </RouterLink>
             </ScrollLink>
           </li>
         </ul>
@@ -59,12 +65,18 @@ export default function Header() {
                 <div className="groupFocus groupFocusHamburger">
                   <ul className="groupFocusList">
                     <li>
-                      <RouterLink to="/botox" className="headerLink headerLinkHamburger">
+                      <RouterLink
+                        to="/botox"
+                        className="headerLink headerLinkHamburger"
+                      >
                         Botox
                       </RouterLink>
                     </li>
                     <li>
-                      <RouterLink to="/invisalign" className="headerLink headerLinkHamburger">
+                      <RouterLink
+                        to="/invisalign"
+                        className="headerLink headerLinkHamburger"
+                      >
                         Invisalign
                       </RouterLink>
                     </li>
@@ -78,7 +90,9 @@ export default function Header() {
                   duration={500}
                   offset={-100}
                 >
-                  <p>Contato</p>
+                  <RouterLink to="/">
+                    <p>Contato</p>
+                  </RouterLink>
                 </ScrollLink>
               </li>
             </ul>

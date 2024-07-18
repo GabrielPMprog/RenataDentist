@@ -36,6 +36,7 @@ function App() {
         />
         <Route path="/botox" element={<BotoxPage />} />
         <Route path="/invisalign" element={<InvisalignPage />} />
+        
       </Routes>
       <Footer />
       <FloatingWhatsApp

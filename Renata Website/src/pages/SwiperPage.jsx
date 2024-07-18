@@ -22,7 +22,7 @@ const [direction, setDirection] = useState("")
 
 useEffect(() => {
 
-    if (window.innerWidth > 1200) {
+    if (window.innerWidth > 1000) {
       setDirection("horizontal");
     } else {
       setDirection("vertical");
